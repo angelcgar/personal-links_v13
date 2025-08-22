@@ -762,11 +762,22 @@ export const categories = [
   },
 ]
 
+interface allLinksInterface {
+  categoryId: string;
+  categoryName: string;
+  id: string;
+  name: string;
+  description: string;
+  url: string;
+  dateAdded: string;
+  rating: number;
+}
+
 // Flatten all links and add category information to each link
-export const allLinks = categories.flatMap((category) =>
+export const allLinks: allLinksInterface[] = categories.flatMap((category) =>
   category.links.map((link) => ({
-    ...link,
     categoryId: category.id,
     categoryName: category.name,
+    ...link,
   })),
 )
