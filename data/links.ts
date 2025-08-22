@@ -470,6 +470,14 @@ export const categories = [
         dateAdded: "2023-06-20",
         rating: 4.6,
       },
+      {
+        id: "90",
+        name: "rapid charts",
+        description: "Una herramienta de IA para hacer diagramas en minutos no en horas",
+        url: "https://www.rapidcharts.ai/",
+        dateAdded: "2025-08-22",
+        rating: 4.6,
+      },
     ],
   },
   {
